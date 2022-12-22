@@ -1,6 +1,5 @@
 from django.shortcuts import render
 import requests
-import json
 
 
 # Create your views here.
@@ -26,5 +25,5 @@ def index(request):
 
         else:
             data = {'error': 'Invalid entry. Please enter another location.'}
-    return render(request, "main/index.html", data)
+    return render(request, "index.html", data)
 
